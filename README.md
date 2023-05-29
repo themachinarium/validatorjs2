@@ -16,13 +16,13 @@ This library was inspired by the [Laravel framework's Validator](http://laravel.
 ### Using npm
 
 ```bash
-npm install validatorjs
+npm install validatorjs2
 ```
 
 ### Using yarn
 
 ```bash
-yarn add validatorjs
+yarn add validatorjs2
 ```
 
 ### Browser
@@ -46,7 +46,7 @@ import * as Validator from 'validatorjs';
 ### Basic Usage
 
 ```js
-let validation = new Validator(data, rules [, customErrorMessages]);
+let validation = new Validator(data, rules [customErrorMessages]);
 ```
 
 __data__ {Object} - The data you want to validate
