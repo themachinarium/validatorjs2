@@ -1,9 +1,9 @@
-# validatorjs
+# validatorjs2
 
 The validatorjs library makes data validation in JavaScript very easy in both the browser and Node.js.
 This library was inspired by the [Laravel framework's Validator](http://laravel.com/docs/validation).
 
-## Why use validatorjs?
+## Why use validatorjs2?
 
 * Works in both the browser and Node.
 * Readable and declarative validation rules.
@@ -35,12 +35,12 @@ yarn add validatorjs2
 
 ```js
 // ES5
-let Validator = require('validatorjs');
+let Validator = require('validatorjs2');
 ```
 
 ```js
 // ES6
-import * as Validator from 'validatorjs';
+import * as Validator from 'validatorjs2';
 ```
 
 ### Basic Usage
@@ -546,7 +546,7 @@ Error messages are in English by default. To include another language in the bro
 In Node, it will automatically pickup on the language source files.
 
 ```js
-let Validator = require('validatorjs');
+let Validator = require('validatorjs2');
 Validator.useLang('ru');
 ```
 
@@ -593,11 +593,4 @@ Released under the MIT license
 
 ### Credits
 
-validatorjs created by David Tang
-validatorjs maintained by Mike Erickson and Contributors
-
-E-Mail: [codedungeon@gmail.com](mailto:codedungeon@gmail.com)
-
-Twitter: [@codedungeon](http://twitter.com/codedungeon)
-
-Website: [codedungeon.io](http://codedungeon.io)
+It was forked from the https://www.npmjs.com/package/validatorjs repository.
