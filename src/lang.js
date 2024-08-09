@@ -47,8 +47,14 @@ var container = {
       try {
         var rawMessages = require_method('./lang/' + lang);
         this._set(lang, rawMessages);
-      } catch (e) {}
+      } catch (e) {
+        lang = process.env.FALLBACK_LANGUAGE || "tr"
+        var rawMessages = require_method('./lang/' + lang);
+        this._set(lang, rawMessages);
+      }
     }
+
+    return lang;
   },
 
   /**
