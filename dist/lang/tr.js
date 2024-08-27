@@ -11,7 +11,7 @@ module.exports = {
   between: ':attribute alanı :min ile :max arasında olabilir.',
   confirmed: ':attribute uyuşmuyor.',
   email: ':attribute formatı geçersiz.',
-  date: ':attribute geöerli bir tarih alanı değil.',
+  date: ':attribute geçerli bir tarih alanı değil.',
   def: ':attribute hatalar içeriyor.',
   digits: ':attribute sadece rakamlardan oluşabilir.',
   digits_between: ':attribute :min ile :max arasında rakam olmalıdır.',
