@@ -99,6 +99,27 @@ function isValidDate(dateString) {
 }
 
 var rules = {
+  /**
+   * Validates that the value of integers.
+   * 1,2,3 => true
+   * 1,2,"3" => false
+   */
+  checkIntegers: function (value) {
+    const data = value.split(",").map((item) => item.trim());
+
+    const isArray = Array.isArray(data);
+
+    if (!isArray) {
+      return false;
+    }
+
+    const integers = data.every((item) => Number.isInteger(Number(item)));
+
+    if (!integers) {
+      return false;
+    }
+  },
+
   required: function (val) {
     var str;
 
