@@ -1,7 +1,7 @@
 {
   "name": "validatorjs2",
   "description": "Validation library inspired by Laravel's Validator",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "info@machinarium.co",
   "contributors": [
     {
