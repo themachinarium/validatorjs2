@@ -120,6 +120,22 @@ var rules = {
     }
   },
 
+  checkOrders: function (value, args) {
+    const allowed = args.split(",").map((val) => val.trim());
+    const values = value.split(",")
+      .map((val) => val.trim())
+      .map((val) => {
+        const [field, sort = "ASC"] = val.split(":");
+
+        return { field, sort: sort.toUpperCase() };
+      });
+
+    return values.every((item) =>
+      allowed.includes(item.field) &&
+      ["ASC", "DESC"].includes(item.sort)
+    );
+  },
+
   required: function (val) {
     var str;
 
